@@ -3,6 +3,8 @@ import { useState } from "react";
 import List from "./List";
 import { Link, NavLink, Route, Routes } from "react-router";
 
+//Modes are all decided on the top level so they donot necessarily need a context or state maintanence
+
 function Navbar() {
   const [isDark, setIsDark] = useState(true);
 
@@ -13,14 +15,14 @@ function Navbar() {
 
   return (
     <div>
-      <div className=" flex justify-between flex-row w-4/5 mx-auto mt-14 bg-white px-14 py-4 rounded -mb-10">
-        <NavLink className="bg-gray-300 rounded p-2" to="/">
+      <div className=" flex justify-between flex-row w-4/5 mx-auto mt-14 bg-white dark:bg-gray-100 px-14 py-4 rounded -mb-10">
+        <NavLink className="bg-gray-300 dark:bg-white rounded p-2" to="/">
           Home
         </NavLink>
         <div className="flex justify-between flex-row w-1/5">
-          <button className="bg-gray-300 rounded p-2">All</button>
-          <button className="bg-gray-300 rounded p-2">Registered</button>
-          <NavLink className="bg-gray-300 rounded p-2" to="/about">
+          <button className="bg-gray-300 dark:bg-white rounded p-2">All</button>
+          <button className="bg-gray-300 dark:bg-white rounded p-2">Registered</button>
+          <NavLink className="bg-gray-300 dark:bg-white rounded p-2" to="/about">
             About us
           </NavLink>
           {isDark ? (

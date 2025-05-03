@@ -12,13 +12,6 @@ import { Link, NavLink, Route, Routes } from "react-router";
 function App() {
   return (
     <>
-      {/* <div>
-        {isDark ? (
-          <button onClick={() => toggleMode(false)}>Dark</button>
-        ) : (
-          <button onClick={() => toggleMode(true)}>Light</button>
-        )}
-      </div> */}
       <Routes>
         <Route path="/">
           <Route index element={<Home_Page />} />
