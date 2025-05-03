@@ -6,6 +6,7 @@ import Home_Page from "./Components/Home_Page";
 import About from "./Components/About";
 import Navbar from "./Components/Navbar";
 import NoPage from "./Components/NoPage";
+import Course_Home from "./Components/Course_Home";
 import { Link, NavLink, Route, Routes } from "react-router";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route index element={<Home_Page />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NoPage />} />
+          <Route path="course/:id" element={<Course_Home />} />
         </Route>
       </Routes>
     </>
