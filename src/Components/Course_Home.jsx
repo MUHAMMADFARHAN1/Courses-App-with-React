@@ -3,16 +3,9 @@ import { useLocation, useParams } from "react-router";
 import Navbar from "./Navbar";
 import data from "./../data";
 
-// Simulating backend request
-function fetchArticle(slug) {
-  return data.find((item) => item.slug == slug);
-}
-
 function Course_Home() {
   let { id } = useParams();
-  //   console.log(id, language);
 
-  //   const article = fetchArticle(id);
   return (
     <div>
       <Navbar />

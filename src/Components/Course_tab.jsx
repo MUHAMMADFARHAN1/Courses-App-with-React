@@ -5,7 +5,6 @@ function Course_tab(props) {
   return (
     <div className="flex flex-row justify-between bg-gray-100 p-4 rounded">
       <p>{props.className}</p>
-      {/* <p>Registered</p> */}
       <div className="flex flex-row justify-between bg-gray-100  rounded w-1/7">
         <NavLink
           className="bg-gray-300 rounded px-2 py-1"
@@ -13,7 +12,6 @@ function Course_tab(props) {
         >
           Details
         </NavLink>
-        {/* <button className="bg-gray-300 rounded px-2 py-1">Details</button> */}
         <button className="bg-gray-300 rounded px-2 py-1">Registered</button>
       </div>
     </div>
