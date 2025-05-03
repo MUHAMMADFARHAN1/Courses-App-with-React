@@ -2,6 +2,8 @@ import React from "react";
 import Course_tab from "./Course_tab";
 import data from "./../data";
 
+import { Link, NavLink, Route, Routes } from "react-router";
+
 function List() {
   return (
     <div className="flex justify-between flex-col w-4/5 mx-auto mt-14 bg-white px-14 py-4 rounded gap-10">
