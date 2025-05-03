@@ -8,7 +8,10 @@ import { Link, NavLink, Route, Routes } from "react-router";
 function App() {
   return (
     <>
-      <Home_Page />
+      {/* <Navbar /> */}
+      <Routes>
+        <Route path="/" element={<Home_Page />} />
+      </Routes>
     </>
   );
 }
