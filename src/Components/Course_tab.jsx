@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink, Route, Routes } from "react-router";
 
 function Course_tab(props) {
   return (
@@ -6,7 +7,13 @@ function Course_tab(props) {
       <p>{props.className}</p>
       {/* <p>Registered</p> */}
       <div className="flex flex-row justify-between bg-gray-100  rounded w-1/7">
-        <button className="bg-gray-300 rounded px-2 py-1">Details</button>
+        <NavLink
+          className="bg-gray-300 rounded px-2 py-1"
+          to={`course/${props.classid}`}
+        >
+          Details
+        </NavLink>
+        {/* <button className="bg-gray-300 rounded px-2 py-1">Details</button> */}
         <button className="bg-gray-300 rounded px-2 py-1">Registered</button>
       </div>
     </div>
