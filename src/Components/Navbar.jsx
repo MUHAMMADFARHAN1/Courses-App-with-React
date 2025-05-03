@@ -15,14 +15,19 @@ function Navbar() {
 
   return (
     <div>
-      <div className=" flex justify-between flex-row w-4/5 mx-auto mt-14 bg-white dark:bg-gray-100 px-14 py-4 rounded -mb-10">
+      <div className=" flex justify-between flex-row w-4/5 mx-auto mt-14 bg-white dark:bg-gray-100 px-14 py-4 rounded -mb-10 gap-2">
         <NavLink className="bg-gray-300 dark:bg-white rounded p-2" to="/">
           Home
         </NavLink>
-        <div className="flex justify-between flex-row w-1/5">
+        <div className="flex justify-between flex-row xl:w-1/5 gap-2">
           <button className="bg-gray-300 dark:bg-white rounded p-2">All</button>
-          <button className="bg-gray-300 dark:bg-white rounded p-2">Registered</button>
-          <NavLink className="bg-gray-300 dark:bg-white rounded p-2" to="/about">
+          <button className="bg-gray-300 dark:bg-white rounded p-2">
+            Registered
+          </button>
+          <NavLink
+            className="bg-gray-300 dark:bg-white rounded p-2"
+            to="/about"
+          >
             About us
           </NavLink>
           {isDark ? (
