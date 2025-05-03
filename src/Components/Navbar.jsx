@@ -12,7 +12,7 @@ function Navbar() {
           <button className="bg-gray-300 rounded p-2">About us</button>
         </div>
       </div>
-      <List />
+      {/* <List /> */}
     </div>
   );
 }
