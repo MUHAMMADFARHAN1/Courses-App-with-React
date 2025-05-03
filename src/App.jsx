@@ -7,9 +7,18 @@ import NoPage from "./Components/NoPage";
 import Course_Home from "./Components/Course_Home";
 import { Link, NavLink, Route, Routes } from "react-router";
 
+//Modes are all decided on the top level so they donot necessarily need a context or state maintanence
+
 function App() {
   return (
     <>
+      {/* <div>
+        {isDark ? (
+          <button onClick={() => toggleMode(false)}>Dark</button>
+        ) : (
+          <button onClick={() => toggleMode(true)}>Light</button>
+        )}
+      </div> */}
       <Routes>
         <Route path="/">
           <Route index element={<Home_Page />} />
