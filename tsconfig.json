@@ -5,6 +5,7 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "jsx": "react", // or "react-native"
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
