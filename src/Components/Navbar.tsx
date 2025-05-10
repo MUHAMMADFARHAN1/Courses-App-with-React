@@ -17,9 +17,10 @@ function Navbar() {
   return (
     <div>
       <div className=" flex justify-between flex-row w-4/5 mx-auto mt-14 bg-white dark:bg-gray-100 px-14 py-4 rounded -mb-10 gap-2">
-        <Button size="icon" className="bg-white text-black">
+        <NavLink className="bg-gray-300 dark:bg-white rounded p-2" to="/">
           Home
-        </Button>
+        </NavLink>
+
         <div className="flex justify-between flex-row xl:w-1/5 gap-2">
           <Button size="icon" className="bg-white text-black">
             All
