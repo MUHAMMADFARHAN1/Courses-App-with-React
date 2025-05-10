@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation, useParams } from "react-router";
 import Navbar from "./Navbar";
-import data from "./../data";
+import data from "../data";
 
 function Course_Home() {
   let { id } = useParams();
